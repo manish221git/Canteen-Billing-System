@@ -2,13 +2,22 @@ package com.canteen.gui;
 
 import com.canteen.dao.*;
 import com.canteen.exception.DatabaseException;
-import com.canteen.model.*;
+import com.canteen.model.Admin;
+import com.canteen.model.Bill;
+import com.canteen.model.MenuItem;
+import com.canteen.model.Order;
+import com.canteen.model.OrderItem;
+import com.canteen.model.Staff;
 import com.canteen.thread.BillGenerator;
 import com.canteen.thread.OrderProcessor;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridLayout;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
