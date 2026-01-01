@@ -3,11 +3,17 @@ package com.canteen.model;
 /**
  * Base class for all users in the system
  * Demonstrates Inheritance and Polymorphism
+ * 
+ * NOTE: For production systems, password should be:
+ * 1. Hashed using BCrypt or PBKDF2
+ * 2. Never stored or returned in plain text
+ * 3. Compared using secure hash comparison
+ * Plain text is used here for educational/demo purposes only
  */
 public abstract class User {
     protected int userId;
     protected String username;
-    protected String password;
+    protected String password; // TODO: Should be hashed in production
     protected String role;
     
     public User() {}

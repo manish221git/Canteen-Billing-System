@@ -116,6 +116,8 @@ public class DatabaseManager {
             );
             
             // Insert default admin user if not exists
+            // NOTE: For production, password should be hashed using BCrypt or similar
+            // Plain text password is used here for educational/demo purposes only
             stmt.execute(
                 "INSERT OR IGNORE INTO users (user_id, username, password, role, extra_info) " +
                 "VALUES (1, 'admin', 'admin123', 'ADMIN', 'Management')"

@@ -205,6 +205,14 @@ The application includes:
 - **Username**: admin
 - **Password**: admin123
 
+⚠️ **Security Note:** This is an educational/demo project. For production use:
+- Implement password hashing (BCrypt, PBKDF2)
+- Use HTTPS for all communication
+- Add input validation and sanitization
+- Implement proper authentication/authorization
+- Use prepared statements (already done)
+- Add rate limiting and CSRF protection
+
 ## 🎓 Academic Rubric Compliance
 
 | Criteria | Marks | Implementation |
